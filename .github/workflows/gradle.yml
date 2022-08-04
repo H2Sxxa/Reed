@@ -27,5 +27,5 @@ jobs:
     - name: Upload build
       uses: actions/upload-artifact@v3
       with:
-        name: m4scookie
-        path: '**/m4scookie-*.jar'
+        name: reed
+        path: '**/reed-*.jar'
