@@ -13,7 +13,6 @@ public class ItemBase extends Item implements IHasModel{
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(tab);
-        //setMaxDamage(155);
         
         ModItem.ITEMS.add(this);
     }
