@@ -3,6 +3,7 @@ package com.h2sxxa.reed.item.special;
 import javax.annotation.Nullable;
 
 import com.h2sxxa.reed.entity.item.EntityItemConventer;
+import com.h2sxxa.reed.init.ModItem;
 import com.h2sxxa.reed.item.InfoFoodBase;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -31,7 +32,7 @@ public class DeadlyFoodItem extends InfoFoodBase{
     @Nullable
     @Override
     public Entity createEntity(World world, Entity location, ItemStack itemstack) {
-        return new EntityItemConventer(world, location, itemstack);
+        return new EntityItemConventer(world, location, itemstack,ModItem.FOOD_BEFORE);
     }
 
     @Override
