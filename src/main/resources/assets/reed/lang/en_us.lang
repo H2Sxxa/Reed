@@ -2,12 +2,16 @@
 itemGroup.AgriTab=荻 ~ 作物
 itemGroup.FoodTab=荻 ~ 食物
 
+#AgriTab
 item.reed.name=荻
 reed.info.reed=§a获取方法:作物「荻」的采摘/n§8按住 §e[LSHIFT] §8显示更多信息
-#§f
 reed.info.reed.hide=用于制作多种食物的原料,重要性不亚于小麦
 
+item.reed_seed.name=荻种子
+reed_seed.info.reed=§a获取方法:破坏「草」有一定概率掉落/n§8按住 §e[LSHIFT] §8显示更多信息
+reed_seed.info.reed.hide=就是普通的种子罢了(/n§m荻的种子萌发和幼苗的生长,需要在15℃左右的温度条件下/n§m日平均气温在l8-25℃时,荻的植株生长发育最旺盛,每天可增高10厘米,产量显著提高。
+
+#FoodTab
 item.reed_cookie.name=荻饼
 reed_cookie.info.reed=§a获取方法:.../n§8按住 §e[LSHIFT] §8显示更多信息
-#§f
 reed_cookie.info.reed.hide=§m事Cookie⚝
