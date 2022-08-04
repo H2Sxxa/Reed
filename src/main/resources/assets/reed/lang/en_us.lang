@@ -1,0 +1,13 @@
+#tab
+itemGroup.AgriTab=荻 ~ 作物
+itemGroup.FoodTab=荻 ~ 食物
+
+item.reed.name=荻
+reed.info.reed=§a获取方法:作物「荻」的采摘/n§8按住 §e[LSHIFT] §8显示更多信息
+#§f
+reed.info.reed.hide=用于制作多种食物的原料,重要性不亚于小麦
+
+item.reed_cookie.name=荻饼
+reed_cookie.info.reed=§a获取方法:.../n§8按住 §e[LSHIFT] §8显示更多信息
+#§f
+reed_cookie.info.reed.hide=§m事Cookie⚝
