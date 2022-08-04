@@ -12,7 +12,6 @@ import net.minecraft.item.Item;
 import net.minecraft.potion.PotionEffect;
 
 
-
 public class ModItem {
     //Item
     public static final List<Item> ITEMS = new ArrayList<Item>();
@@ -24,5 +23,5 @@ public class ModItem {
     public static final Item REED_COOKIE = new PotionFoodItem("reed_cookie",5,5f,true,FoodTab.FoodTab,new PotionEffect(MobEffects.REGENERATION, 60, 2));
     public static final Item BAKED_REED_COOKIE = new InfoFoodBase("baked_reed_cookie",3,3f,true,FoodTab.FoodTab);
     public static final Item BLACK_REED_COOKIE = new DeadlyFoodItem("black_reed_cookie", 1, 0, true, FoodTab.FoodTab);
-    public static final Item FOOD_BEFORE = new BeforeFoodItem("food_before", -1, -1, true, FoodTab.FoodTab);
+    public static final Item FOOD_BEFORE = new BeforeFoodItem("food_before", 0, 0, true, FoodTab.FoodTab);
 }
