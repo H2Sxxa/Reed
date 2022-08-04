@@ -1,8 +1,12 @@
 package com.h2sxxa.reed.item.special;
 
+import javax.annotation.Nullable;
+
+import com.h2sxxa.reed.entity.item.EntityItemConventer;
 import com.h2sxxa.reed.item.InfoFoodBase;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
@@ -22,5 +26,16 @@ public class DeadlyFoodItem extends InfoFoodBase{
             player.setHealth(1f);
             player.addPotionEffect(new PotionEffect(MobEffects.POISON, 60, 4));
         }
+    }
+
+    @Nullable
+    @Override
+    public Entity createEntity(World world, Entity location, ItemStack itemstack) {
+        return new EntityItemConventer(world, location, itemstack);
+    }
+
+    @Override
+    public boolean hasCustomEntity(ItemStack stack) {
+        return true;
     }
 }
