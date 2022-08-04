@@ -11,9 +11,9 @@ import net.minecraft.world.World;
 import org.lwjgl.input.Keyboard;
 
 
-public class InfoDescBase extends ItemBase{
+public class InfoItemBase extends ItemBase{
     String key;
-    public InfoDescBase(String name,CreativeTabs tab){
+    public InfoItemBase(String name,CreativeTabs tab){
         super(name, tab);
         this.key=name.concat(".info.reed");
     }

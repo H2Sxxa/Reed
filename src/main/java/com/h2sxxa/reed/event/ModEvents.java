@@ -29,16 +29,6 @@ public final class ModEvents {
         }
     }
 
-    /*@SubscribeEvent
-     *public static void ItemConvent(ItemTossEvent event){
-     *    if (event.getEntityItem().getItem().getItem() instanceof DeadlyFoodItem){
-     *       if (event.getEntityItem().isOverWater()){
-     *           event.getEntityItem().setItem(new ItemStack(ModItem.FOOD_BEFORE));
-     *       }
-     *   }
-     *}
-     */
-
     /* pre to use
      * @SubscribeEvent
      * @SideOnly(Side.CLIENT)

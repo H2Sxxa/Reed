@@ -14,7 +14,6 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void onItemRegister(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(ModItem.ITEMS.toArray(new Item[0]));
-        //System.out.println("Regist m4scookie Item;");
     }
 
     @SubscribeEvent
@@ -22,7 +21,6 @@ public class RegistryHandler {
         for(Item item: ModItem.ITEMS){
             if(item instanceof IHasModel) {
                 ((IHasModel)item).registerModels();
-                //System.out.println("Regist m4scookie Model;");
             }
         }
     }

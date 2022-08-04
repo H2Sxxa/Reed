@@ -1,6 +1,7 @@
 package com.h2sxxa.reed;
 
 import com.h2sxxa.reed.proxy.CommonProxy;
+import com.h2sxxa.reed.recipe.smelt.ModSmelt;
 import com.h2sxxa.reed.util.*;
 
 import net.minecraftforge.fml.common.Mod;
@@ -34,7 +35,7 @@ public class Main {
     @EventHandler
     public static void Init(FMLInitializationEvent event)
     {
-
+        ModSmelt.ModSmeltInit();
     }
 
     @EventHandler

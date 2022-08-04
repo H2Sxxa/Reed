@@ -18,7 +18,7 @@ reed_cookie.info.reed.hide=§m事Cookie⚝/n§6食用后回复§a 5 §6点饱食
 
 item.baked_reed_cookie.name=烤荻饼
 baked_reed_cookie.info.reed=§a获取方法:烧制「荻饼」/n§a食用后恢复一定饱食度/n§8按住 §e[LSHIFT] §8显示更多信息
-baked_reed_cookie.info.reed.hide=§6食用后回复§a 2 §6点饱食度以及§a 3 §6点营养
+baked_reed_cookie.info.reed.hide=§6食用后回复§a 3 §6点饱食度以及§a 3 §6点营养
 
 item.black_reed_cookie.name=焦黑的荻饼
 black_reed_cookie.info.reed=§a获取方法:烧制「烤荻饼」/n§8按住 §e[LSHIFT] §8显示更多信息
@@ -26,7 +26,7 @@ black_reed_cookie.info.reed.hide=烤过头的荻饼,就算吃了也只有最坏�
 
 
 item.food_before.name=曾经是食物的物体
-food_before.info.reed=§a获取方法:烧制「烤荻饼」/n§8按住 §e[LSHIFT] §8显示更多信息
+food_before.info.reed=§a获取方法:将「焦黑的荻饼」丢入水中/n§8按住 §e[LSHIFT] §8显示更多信息
 food_before.info.reed.hide=光是外表就散发着不详的气息......
 
 

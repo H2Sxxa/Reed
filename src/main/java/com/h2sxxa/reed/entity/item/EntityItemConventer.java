@@ -1,5 +1,7 @@
 package com.h2sxxa.reed.entity.item;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.item.Item;
@@ -11,7 +13,7 @@ public class EntityItemConventer extends EntityItem{
     private ItemStack stack;
     private Item targetitem;
 
-    public EntityItemConventer(World world, Entity location, ItemStack stack,Item targetitem) {
+    public EntityItemConventer(World world, Entity location, ItemStack stack,@Nullable Item targetitem) {
         this(world, location.posX, location.posY, location.posZ, stack);
         if (location instanceof EntityItem){
             NBTTagCompound tag = new NBTTagCompound();
@@ -28,6 +30,7 @@ public class EntityItemConventer extends EntityItem{
     public EntityItemConventer(World worldIn) {
         super(worldIn);
     }
+
     public EntityItemConventer(World worldIn, double x, double y, double z){
         super(worldIn,x,y,z);
     }
@@ -39,9 +42,7 @@ public class EntityItemConventer extends EntityItem{
     @Override
     public void onUpdate() {
         super.onUpdate();
-        
         ItemStack targetstack;
-
         if (this.targetitem != null) {
             targetstack = new ItemStack(this.targetitem);
         }

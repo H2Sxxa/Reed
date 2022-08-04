@@ -2,9 +2,9 @@ package com.h2sxxa.reed.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 
-public class DamageItem extends InfoDescBase{
+public class DamageItemBase extends InfoItemBase{
 
-    public DamageItem(String name, CreativeTabs tab,int maxDamageIn) {
+    public DamageItemBase(String name, CreativeTabs tab,int maxDamageIn) {
         super(name, tab);
         setMaxDamage(maxDamageIn);
     }
