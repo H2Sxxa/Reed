@@ -8,6 +8,8 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class InfoFoodBase extends FoodBase{
     String key;
@@ -15,7 +17,7 @@ public class InfoFoodBase extends FoodBase{
         super(name, amount,saturation,iswolfFood, tab);
         this.key=name.concat(".info.reed");
     }
-
+    @SideOnly(Side.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);

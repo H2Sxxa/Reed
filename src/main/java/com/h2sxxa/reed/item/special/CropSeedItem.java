@@ -3,6 +3,7 @@ package com.h2sxxa.reed.item.special;
 import com.h2sxxa.reed.init.ModBlock;
 import com.h2sxxa.reed.item.InfoItemBase;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,9 +17,12 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
-public class ReedSeedItem extends InfoItemBase implements IPlantable{
-    public ReedSeedItem(String name, CreativeTabs tab) {
+public class CropSeedItem extends InfoItemBase implements IPlantable{
+    //private Block plantBlock;
+    //FIX the plantBlock will cause npe
+    public CropSeedItem(String name, CreativeTabs tab,Block plantBlock) {
         super(name, tab);
+        //this.plantBlock = plantBlock;
     }
     
     @Override
@@ -44,5 +48,4 @@ public class ReedSeedItem extends InfoItemBase implements IPlantable{
     public IBlockState getPlant(IBlockAccess world, BlockPos pos) {
         return ModBlock.REED_HERB.getDefaultState();
     }
-    
 }

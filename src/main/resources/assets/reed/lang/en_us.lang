@@ -1,6 +1,7 @@
 #tab
 itemGroup.AgriTab=荻 ~ 作物
 itemGroup.FoodTab=荻 ~ 食物
+itemGroup.MaterialTab=荻 ~ 食物
 
 #AgriTab
 item.reed.name=荻
@@ -29,5 +30,10 @@ item.food_before.name=曾经是食物的物体
 food_before.info.reed=§a获取方法:将「焦黑的荻饼」丢入水中/n§8按住 §e[LSHIFT] §8显示更多信息
 food_before.info.reed.hide=光是外表就散发着不详的气息......
 
+#MaterialTab
+item.reed_powder.name=荻粉
+reed_powder.info.reed=§a获取方法:.../n§8按住 §e[LSHIFT] §8显示更多信息
+reed_powder.info.reed.hide=...
 
+#other
 dead.beforefood.message=<player_name>意外地食用了致命的食物

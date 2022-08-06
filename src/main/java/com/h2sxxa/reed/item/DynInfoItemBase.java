@@ -12,6 +12,8 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class DynInfoItemBase extends ItemBase{
     String key;
@@ -20,7 +22,7 @@ public class DynInfoItemBase extends ItemBase{
         super(name, tab);
         this.key=name.concat(".info.reed");
     }
-
+    @SideOnly(Side.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);

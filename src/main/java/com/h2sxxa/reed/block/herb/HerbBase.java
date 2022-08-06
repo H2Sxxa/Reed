@@ -18,7 +18,7 @@ import net.minecraft.world.World;
 public class HerbBase extends BlockCrops{
     private static final AxisAlignedBB[] herb1 = new AxisAlignedBB[] {new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D,1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.25D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D,1.0D, 0.375D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5625D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.8125D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D)};
     private Item seed,crop;
-    
+    //private static PropertyInteger herb_age = PropertyInteger.create("age", 0, 7);
     public HerbBase(String name,Item seed,Item crop)
     {
         setUnlocalizedName(name);
@@ -26,7 +26,6 @@ public class HerbBase extends BlockCrops{
 
         this.seed=seed;
         this.crop=crop;
-
         ModBlock.BLOCKS.add(this);
     }
     @Override
@@ -43,7 +42,6 @@ public class HerbBase extends BlockCrops{
         }
         return false;
     }
-    
     @Override
     protected Item getSeed()
     {
