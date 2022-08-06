@@ -18,7 +18,7 @@ public class ModItem {
     //public static final Item MISCANTHUS_SACCHARIFLORUS = new InfoDescBase("miscanthus_sacchariflorus", FoodTab);
     //AgriTab
     public static final Item REED = new InfoItemBase("reed", AgriTab.AgriTab);
-    public static final Item REED_SEED = new InfoItemBase("reed_seed", AgriTab.AgriTab);
+    public static final Item REED_SEED = new ReedSeedItem("reed_seed", AgriTab.AgriTab);
     //FoodTab
     public static final Item REED_COOKIE = new PotionFoodItem("reed_cookie",5,5f,true,FoodTab.FoodTab,new PotionEffect(MobEffects.REGENERATION, 60, 2));
     public static final Item BAKED_REED_COOKIE = new InfoFoodBase("baked_reed_cookie",3,3f,true,FoodTab.FoodTab);

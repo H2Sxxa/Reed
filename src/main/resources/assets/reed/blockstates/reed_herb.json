@@ -1,0 +1,13 @@
+{
+    "variants":
+    {
+        "age=0":{"model": "reed:plant/reed_herb/reed_herb0"},
+        "age=1":{"model": "reed:plant/reed_herb/reed_herb1"},
+        "age=2":{"model": "reed:plant/reed_herb/reed_herb2"},
+        "age=3":{"model": "reed:plant/reed_herb/reed_herb3"},
+        "age=4":{"model": "reed:plant/reed_herb/reed_herb4"},
+        "age=5":{"model": "reed:plant/reed_herb/reed_herb5"},
+        "age=6":{"model": "reed:plant/reed_herb/reed_herb6"},
+        "age=7":{"model": "reed:plant/reed_herb/reed_herb7"}
+    }
+}

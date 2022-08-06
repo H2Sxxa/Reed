@@ -5,29 +5,29 @@ itemGroup.FoodTab=荻 ~ 食物
 #AgriTab
 item.reed.name=荻
 reed.info.reed=§a获取方法:作物「荻」的采摘/n§8按住 §e[LSHIFT] §8显示更多信息
-reed.info.reed.hide=§a获取方法:作物「荻」的采摘/n用于制作多种食物的原料,重要性不亚于小麦
+reed.info.reed.hide=用于制作多种食物的原料,重要性不亚于小麦
 
 item.reed_seed.name=荻种子
 reed_seed.info.reed=§a获取方法:破坏「草」有一定概率掉落/n§8按住 §e[LSHIFT] §8显示更多信息
-reed_seed.info.reed.hide=§a获取方法:破坏「草」有一定概率掉落/n§m荻的种子萌发和幼苗的生长,需要在15℃左右的温度条件下/n§m日平均气温在l8-25℃时,荻的植株生长发育最旺盛,每天可增高10厘米,产量显著提高。/n§a就是普通的种子罢了(
+reed_seed.info.reed.hide=§m荻的种子萌发和幼苗的生长,需要在15℃左右的温度条件下/n§m日平均气温在l8-25℃时,荻的植株生长发育最旺盛,每天可增高10厘米,产量显著提高。/n§a就是普通的种子罢了(
 
 #FoodTab
 item.reed_cookie.name=荻饼
 reed_cookie.info.reed=§a获取方法:.../n§a食用后恢复一定饱食度并持续恢复生命/n§8按住 §e[LSHIFT] §8显示更多信息
-reed_cookie.info.reed.hide=§a获取方法:.../n§a食用后恢复一定饱食度并持续恢复生命/n§m事Cookie⚝/n§6食用后回复§a 5 §6点饱食度以及§a 5 §6点营养,附加§a 3 §6秒等级为§a 3 §6的生命恢复
+reed_cookie.info.reed.hide=§m事Cookie⚝/n§6食用后回复§a 5 §6点饱食度以及§a 5 §6点营养,附加§a 3 §6秒等级为§a 3 §6的生命恢复
 
 item.baked_reed_cookie.name=烤荻饼
 baked_reed_cookie.info.reed=§a获取方法:烧制「荻饼」/n§a食用后恢复一定饱食度/n§8按住 §e[LSHIFT] §8显示更多信息
-baked_reed_cookie.info.reed.hide=§a获取方法:烧制「荻饼」/n§a食用后恢复一定饱食度/n§6食用后回复§a 3 §6点饱食度以及§a 3 §6点营养
+baked_reed_cookie.info.reed.hide=§6食用后回复§a 3 §6点饱食度以及§a 3 §6点营养
 
 item.black_reed_cookie.name=焦黑的荻饼
 black_reed_cookie.info.reed=§a获取方法:烧制「烤荻饼」/n§8按住 §e[LSHIFT] §8显示更多信息
-black_reed_cookie.info.reed.hide=§a获取方法:烧制「烤荻饼」/n烤过头的荻饼,就算吃了也只有最坏的结果
+black_reed_cookie.info.reed.hide=烤过头的荻饼,就算吃了也只有最坏的结果
 
 
 item.food_before.name=曾经是食物的物体
 food_before.info.reed=§a获取方法:将「焦黑的荻饼」丢入水中/n§8按住 §e[LSHIFT] §8显示更多信息
-food_before.info.reed.hide=§a获取方法:将「焦黑的荻饼」丢入水中/n光是外表就散发着不详的气息......
+food_before.info.reed.hide=光是外表就散发着不详的气息......
 
 
 dead.beforefood.message=<player_name>意外地食用了致命的食物

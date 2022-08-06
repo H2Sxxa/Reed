@@ -7,7 +7,7 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.EnumParticleTypes;
+//import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.world.World;
 
 public class EntityItemConventer extends EntityItem{
@@ -45,7 +45,7 @@ public class EntityItemConventer extends EntityItem{
         super.onUpdate();
         ItemStack targetstack;
         if (this.targetitem != null) {
-            targetstack = new ItemStack(this.targetitem);
+            targetstack = new ItemStack(this.targetitem,this.stack.getCount());
         }
         else {
             targetstack = null;
@@ -53,7 +53,6 @@ public class EntityItemConventer extends EntityItem{
 
         if (targetstack != null) {
             //if (this.world.isRemote){this.world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL,this.posX,this.posY,this.posZ, 1d, 1d,1d, null);}
-            targetstack.setCount(this.stack.getCount());
             if (isInWater()){
                 setItem(targetstack);
             }
