@@ -16,8 +16,8 @@ import net.minecraft.world.World;
 
 public class DeadlyFoodItem extends InfoFoodBase{
 
-    public DeadlyFoodItem(String name, int amount, float saturation, boolean iswolfFood, CreativeTabs tab) {
-        super(name, amount, saturation, iswolfFood, tab);
+    public DeadlyFoodItem(String name, int amount, float saturation, boolean iswolfFood, CreativeTabs tab,int use_tick) {
+        super(name, amount, saturation, iswolfFood, tab, use_tick);
     }
 
     @Override

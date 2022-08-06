@@ -19,9 +19,9 @@ public class ModItem {
     public static final Item REED = new InfoItemBase("reed", AgriTab.AgriTab);
     public static final Item REED_SEED = new CropSeedItem("reed_seed", AgriTab.AgriTab,ModBlock.REED_HERB);
     //FoodTab
-    public static final Item REED_COOKIE = new PotionFoodItem("reed_cookie",5,5f,true,FoodTab.FoodTab,new PotionEffect(MobEffects.REGENERATION, 60, 2));
-    public static final Item BAKED_REED_COOKIE = new InfoFoodBase("baked_reed_cookie",3,3f,true,FoodTab.FoodTab);
-    public static final Item BLACK_REED_COOKIE = new DeadlyFoodItem("black_reed_cookie", 1, 0, true, FoodTab.FoodTab);
+    public static final Item REED_COOKIE = new PotionFoodItem("reed_cookie",5,5f,true,FoodTab.FoodTab,new PotionEffect(MobEffects.REGENERATION, 60, 2),32);
+    public static final Item BAKED_REED_COOKIE = new InfoFoodBase("baked_reed_cookie",3,3f,true,FoodTab.FoodTab,32);
+    public static final Item BLACK_REED_COOKIE = new DeadlyFoodItem("black_reed_cookie", 1, 0, true, FoodTab.FoodTab,40);
     public static final Item FOOD_BEFORE = new BeforeFoodItem("food_before", 0, 0, true, FoodTab.FoodTab);
 
     //OtherTab

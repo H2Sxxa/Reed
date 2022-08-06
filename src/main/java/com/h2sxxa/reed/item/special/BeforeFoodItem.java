@@ -13,7 +13,7 @@ import net.minecraft.world.World;
 
 public class BeforeFoodItem extends InfoFoodBase{
     public BeforeFoodItem(String name, int amount, float saturation, boolean iswolfFood, CreativeTabs tab) {
-        super(name, amount, saturation, iswolfFood, tab);
+        super(name, amount, saturation, iswolfFood, tab, amount);
     }
     
     @Override

@@ -13,9 +13,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class InfoFoodBase extends FoodBase{
     String key;
-    public InfoFoodBase(String name, int amount, float saturation, boolean iswolfFood,CreativeTabs tab){
+    int use_tick;
+    public InfoFoodBase(String name, int amount, float saturation, boolean iswolfFood,CreativeTabs tab,int use_tick){
         super(name, amount,saturation,iswolfFood, tab);
         this.key=name.concat(".info.reed");
+        this.use_tick=use_tick;
     }
     @SideOnly(Side.CLIENT)
     @Override
@@ -36,4 +38,11 @@ public class InfoFoodBase extends FoodBase{
             }
         }
     }
+    
+    @Override
+    public int getMaxItemUseDuration(ItemStack stack) {
+        return use_tick;
+    }
+
+
 }

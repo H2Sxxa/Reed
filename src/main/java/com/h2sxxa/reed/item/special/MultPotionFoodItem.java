@@ -14,8 +14,8 @@ public class MultPotionFoodItem extends InfoFoodBase{
 
     ArrayList<PotionEffect> effectlist;
 
-    public MultPotionFoodItem(String name, int amount, float saturation, boolean iswolfFood, CreativeTabs tab, ArrayList<PotionEffect> effectlist) {
-        super(name, amount, saturation, iswolfFood, tab);
+    public MultPotionFoodItem(String name, int amount, float saturation, boolean iswolfFood, CreativeTabs tab, ArrayList<PotionEffect> effectlist,int use_tick) {
+        super(name, amount, saturation, iswolfFood, tab,use_tick);
         this.effectlist=effectlist;
     }
     @Override

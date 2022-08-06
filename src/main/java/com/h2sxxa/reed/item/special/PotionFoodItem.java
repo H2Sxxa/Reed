@@ -10,8 +10,8 @@ import net.minecraft.world.World;
 
 public class PotionFoodItem extends InfoFoodBase{
     PotionEffect effect;
-    public PotionFoodItem(String name, int amount, float saturation, boolean iswolfFood, CreativeTabs tab,PotionEffect effect) {
-        super(name, amount, saturation, iswolfFood, tab);
+    public PotionFoodItem(String name, int amount, float saturation, boolean iswolfFood, CreativeTabs tab,PotionEffect effect,int use_tick) {
+        super(name, amount, saturation, iswolfFood, tab,use_tick);
         this.effect=effect;
     }
     
