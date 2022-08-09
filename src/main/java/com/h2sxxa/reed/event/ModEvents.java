@@ -15,10 +15,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid = Main.MODID)
 public final class ModEvents {
     private static Random EventRandom = new Random();
-    /*
-    * @SubscribeEvent
-    * public static void onEventDeath(LivingDeathEvent event){}
-    */
     @SubscribeEvent
     public static void DropSeed(HarvestDropsEvent event) {
         if(event.getState().getBlock() instanceof BlockTallGrass)

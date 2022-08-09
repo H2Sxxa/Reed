@@ -3,6 +3,7 @@ package com.h2sxxa.reed;
 import com.h2sxxa.reed.proxy.CommonProxy;
 import com.h2sxxa.reed.recipe.smelt.ModSmelt;
 import com.h2sxxa.reed.util.*;
+import com.h2sxxa.reed.util.handlers.RegistryHandler;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -31,6 +32,7 @@ public class Main {
     public static void PreInit(FMLPreInitializationEvent event)
     {
         logger=event.getModLog();
+        RegistryHandler.preInitRegistries();
     }
     @EventHandler
     public static void Init(FMLInitializationEvent event)

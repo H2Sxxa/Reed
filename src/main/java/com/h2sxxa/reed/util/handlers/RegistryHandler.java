@@ -13,6 +13,10 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
 public class RegistryHandler {
+
+    public static void preInitRegistries(){
+    }
+
     @SubscribeEvent
     public static void onItemRegister(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(ModItem.ITEMS.toArray(new Item[0]));
