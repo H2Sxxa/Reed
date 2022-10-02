@@ -15,6 +15,7 @@ public class BlockBase extends Block implements IHasModel{
 
     public BlockBase(String name,CreativeTabs tab,Material materialIn) {
         super(materialIn);
+        setRegistryName(name);
         setUnlocalizedName(name);
         setCreativeTab(tab);
         

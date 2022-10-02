@@ -29,7 +29,6 @@ public class RegistryHandler {
     
     @SubscribeEvent
     public static void onModelRegister(ModelRegistryEvent event) {
-
         for(Block block : ModBlock.BLOCKS){
             if(block instanceof IHasModel){
                 ((IHasModel)block).registerModels();

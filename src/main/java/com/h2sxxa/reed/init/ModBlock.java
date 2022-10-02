@@ -14,7 +14,7 @@ public class ModBlock {
     //Block
     public static final List<Block> BLOCKS = new ArrayList<Block>();
     //common
-    public static final Block SILT = new SiltBlock("silt", BlockTab.BlockTab, Material.GOURD);
+    public static final Block SILT = new SiltBlock("silt", BlockTab.BlockTab, Material.SAND);
     //herb
     public static final Block REED_HERB = new HerbBase("reed_herb", ModItem.REED_SEED, ModItem.REED);
 }
