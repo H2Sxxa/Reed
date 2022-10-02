@@ -3,6 +3,8 @@ package com.h2sxxa.reed.item;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Nullable;
+
 import org.lwjgl.input.Keyboard;
 
 import com.h2sxxa.reed.tool.MiscTool;
@@ -24,7 +26,7 @@ public class DynInfoItemBase extends ItemBase{
     }
     @SideOnly(Side.CLIENT)
     @Override
-    public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);
         if(Keyboard.isKeyDown(Keyboard.KEY_LSHIFT) && I18n.format(key.concat(".hide.ctrl"))=="true"){
             for (String i:I18n.format(key.concat(".hide")).split("/n")){

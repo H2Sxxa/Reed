@@ -2,6 +2,8 @@ package com.h2sxxa.reed.item;
 
 import java.util.List;
 
+import javax.annotation.Nullable;
+
 import org.lwjgl.input.Keyboard;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
@@ -21,7 +23,7 @@ public class InfoFoodBase extends FoodBase{
     }
     @SideOnly(Side.CLIENT)
     @Override
-    public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);
         if(Keyboard.isKeyDown(Keyboard.KEY_LSHIFT) && I18n.hasKey(key.concat(".hide")))
         {

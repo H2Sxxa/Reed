@@ -1,5 +1,4 @@
 package com.h2sxxa.reed.tool;
-import javax.annotation.Nullable;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -38,7 +37,6 @@ public class NBTUtil {
 	//writeEntityToNBT
 	//readEntityFromNBT
 	
-	@Nullable
 	public static boolean StackHasKey(ItemStack stack, String key) {
 		return !(stack.isEmpty() || !getNBT(stack).hasKey(key));
 	}
@@ -200,7 +198,6 @@ public class NBTUtil {
 
 	
 	//entity
-	@Nullable
 	public static boolean EntityHasKey(Entity entity, String key)
 	{
 		return getNBT(entity).hasKey(key);

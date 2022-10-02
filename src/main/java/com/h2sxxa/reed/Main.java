@@ -22,6 +22,7 @@ public class Main {
     public static final String VERSION="1.0";
 
     public static Logger logger;
+    
     @Instance
     public static Main instance;
 
@@ -34,6 +35,7 @@ public class Main {
         logger=event.getModLog();
         RegistryHandler.preInitRegistries();
     }
+
     @EventHandler
     public static void Init(FMLInitializationEvent event)
     {

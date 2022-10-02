@@ -2,6 +2,8 @@ package com.h2sxxa.reed.block.block;
 
 import java.util.List;
 
+import javax.annotation.Nullable;
+
 import net.minecraft.block.material.Material;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
@@ -22,7 +24,7 @@ public class InfoBlockBase extends BlockBase{
     
     @SideOnly(Side.CLIENT)
     @Override
-    public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);
         if(Keyboard.isKeyDown(Keyboard.KEY_LSHIFT) && I18n.hasKey(key.concat(".hide")))
         {
